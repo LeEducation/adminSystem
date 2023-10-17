@@ -5,5 +5,7 @@ defineOptions({
 </script>
 
 <template>
-  <div>test</div>
+  <div>
+    <el-card>22</el-card>
+  </div>
 </template>

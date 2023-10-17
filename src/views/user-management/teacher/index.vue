@@ -5,5 +5,5 @@ defineOptions({
 </script>
 
 <template>
-  <div>test2</div>
+  <div>teacher</div>
 </template>

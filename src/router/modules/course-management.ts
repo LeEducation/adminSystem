@@ -3,26 +3,26 @@ export default {
   redirect: "/course-management/course-management",
   meta: {
     icon: "informationLine",
-    title: "课程管理咯咯咯",
+    title: "课程管理",
     rank: 9
   },
   children: [
     {
-      path: "/course-management/course-management",
+      path: "/course-management/course",
       name: "CourseManagement",
-      component: () => import("@/views/course-management/index.vue"),
+      component: () => import("@/views/course-management/course/index.vue"),
       meta: {
-        title: "课程管理1",
-        showParent: true
+        title: "课程管理"
+        // showParent: true
+      }
+    },
+    {
+      path: "/course-management/event",
+      name: "EventManagement",
+      component: () => import("@/views/course-management/event/index.vue"),
+      meta: {
+        title: "活动管理"
       }
     }
-    // {
-    //   path: "/test/test2",
-    //   name: "Test2",
-    //   component: () => import("@/views/test/test2.vue"),
-    //   meta: {
-    //     title: "testChildrenTitle2222222"
-    //   }
-    // }
   ]
 } as RouteConfigsTable;
