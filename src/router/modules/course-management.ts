@@ -1,6 +1,6 @@
 export default {
   path: "/course-management",
-  redirect: "/course-management/index",
+  redirect: "/course-management/course-management",
   meta: {
     icon: "informationLine",
     title: "课程管理咯咯咯",
@@ -8,7 +8,7 @@ export default {
   },
   children: [
     {
-      path: "/course-management/index",
+      path: "/course-management/course-management",
       name: "CourseManagement",
       component: () => import("@/views/course-management/index.vue"),
       meta: {

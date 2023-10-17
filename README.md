@@ -1,40 +1,33 @@
-<h1>vue-pure-admin精简版（非国际化版本）</h1>
+# 开发环境
 
-[![license](https://img.shields.io/github/license/pure-admin/vue-pure-admin.svg)](LICENSE)
+node 版本应不小于 16 ，pnpm 版本应不小于 6
 
-**中文** | [English](./README.en-US.md)
+如果您还没安装 pnpm，请执行下面命令进行安装（mac 用户遇到安装报错请在命令前加上 sudo）
 
-## 介绍
+npm install -g pnpm
 
-精简版是基于 [vue-pure-admin](https://github.com/pure-admin/vue-pure-admin) 提炼出的架子，包含主体功能，更适合实际项目开发，打包后的大小在全局引入 [element-plus](https://element-plus.org) 的情况下仍然低于 `2.3MB`，并且会永久同步完整版的代码。开启 `brotli` 压缩和 `cdn` 替换本地库模式后，打包大小低于 `350kb`
+如果您需要安装多个 node 版本环境，请参考 Node.js 版本管理工具
 
-## 版本选择
+如果您觉得安装平台依赖慢，请参考 npmmirror
 
-当前是非国际化版本，如果您需要国际化版本 [请点击](https://github.com/pure-admin/pure-admin-thin/tree/i18n)
+#
 
-## 配套视频
+- 安装依赖
 
-- [点我查看教程](https://www.bilibili.com/video/BV1kg411v7QT)
-- [点我查看 UI 设计](https://www.bilibili.com/video/BV17g411T7rq)
+```bash
 
-## 配套保姆级文档
+pnpm install
 
-- [查看文档](https://yiming_chang.gitee.io/pure-admin-doc)
+```
 
-## 预览
+- 运行
 
-- [查看预览](https://pure-admin-thin.netlify.app/#/login)
+```bash
+pnpm serve
+```
 
-## 维护者
+- 打包
 
-[xiaoxian521](https://github.com/xiaoxian521)
-
-## ⚠️ 注意
-
-- 精简版不接受任何 `issues` 和 `pr`，如果有问题请到完整版 [issues](https://github.com/pure-admin/vue-pure-admin/issues/new/choose) 去提，谢谢！
-
-## 许可证
-
-原则上不收取任何费用及版权，可商用，不过如需二次开源（比如用此平台二次开发并开源，要求前端代码必须开源免费）请联系作者获取许可！（免费，走个记录而已）
-
-[MIT © 2020-present, pure-admin](./LICENSE)
+```bash
+pnpm build
+```
